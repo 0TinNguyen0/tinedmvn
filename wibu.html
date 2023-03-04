@@ -1,0 +1,207 @@
+<IDOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="wibu.css">
+      <title>TIN EDM VN</title>
+  </head>
+  <body>
+      <div id="toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    <div id="wrapper">
+           <header>
+              <div class="inner-header container">
+                <div id="logo_header">
+                 <a href="index.html" id="logo">TIN EDM VN</a>
+                </div> 
+                 <nav>
+                      <ul id="main-menu">
+                          <li><a href="index.html" class="active" title="Trang chủ"><b>Trang Chủ</b></a></li>  
+                          <li><a href="#" title="Wibu"> <b> Wibu </b> </a> </li>
+                          <li><a href="#" title="Top Anime Hot"><b> Top Anime Hot</b></a> </li> 
+                          <a href="https://www.youtube.com/c/TINEDMVN" target="_blank" class="icon-youtube"><i class="fab fa-youtube"></i></a>      
+                          <a href="https://www.facebook.com/0TinNguyen0" target="_blank" class="icon-facebook"><i class="fab fa-facebook"></i></a>                                         
+                          
+                          <div id="light_dark">
+                            <input type="checkbox" name="" class="switch-toggle" 
+                            id="light-dark">
+                          </div>  
+                      </ul>
+                  </nav>
+              </div>                
+          </header> 
+        <div id= "banner">
+          <h1>Wibu</h1>
+        </div>  
+      <div id="content" class="container">
+          <div class="slider">
+              <div class="slide active">
+                  <img src="https://c.wallhere.com/photos/fc/b7/anime_Boku_no_hero_Boku_no_Hero_Academia_Himiko_Toga_anime_girls-1693319.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/00/7f/Boku_no_Hero_Academia_Himiko_Toga_yandere_blood_heart_smiling_window_splashes-1599343.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/44/f3/digital_art_anime_girls_fantasy_art_artwork_schoolgirl_minimalism_My_Hero_Acadamia_Boku_no_Hero_Academia-1456459.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/1b/ca/Boku_no_Hero_Academia_anime_girls_Himiko_Toga-1331335.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/28/79/anime_blurred_landscape_render_in_shapes_Boku_no_hero_Boku_no_Hero_Academia_Himiko_Toga-1535945.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/75/9f/Boku_no_Hero_Academia_anime_girls_blond_hair_blood_smiling_Himiko_Toga-1607827.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/51/69/Boku_no_Hero_Academia_anime_girls_Himiko_Toga_blond_hair_blood-1450413.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/e7/77/anime_Boku_no_hero_Boku_no_Hero_Academia_Himiko_Toga_blood-1682705.jpg!d" alt="">
+              </div>
+              <div class="slide">
+                  <img src="https://c.wallhere.com/photos/6d/5b/Boku_no_Hero_Academia_Himiko_Toga_artwork_TAKuMA_anime_girls_digital_art_yellow_eyes_villain-2045433.jpg!d" alt="">
+              </div>
+      
+              <div class="navigation">
+                  <i class="fas fa-chevron-left prev-btn"></i>
+                  <i class="fas fa-chevron-right next-btn"></i>
+              </div>
+              <div class="navigation-visibility">
+                  <div class="slide-icon active"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  <div class="slide-icon"></div>
+                  
+              </div>
+          </div>
+
+          <div class="end">
+
+          </div>
+      </div>
+    </div>
+      
+          <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+          <script>
+              $(document).ready(function() {
+                  $(window).scroll(function() {
+                      if ($(this).scrollTop()) {
+                          $('header').addClass('sticky');
+                      }else{
+                          $('header').removeClass('sticky');
+                      }
+                   });
+              });
+          </script>
+
+          <script>
+              $(document).ready(function() {
+                  $('#toggle').click(function() {
+                      $('header').slideToggle();
+                  });
+              });
+          </script>
+
+<script type="text/javascript">
+  const slider = document.querySelector(".slider");
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".prev-btn");
+  const slides = document.querySelectorAll(".slide");
+  const slideIcons = document.querySelectorAll(".slide-icon");
+  const numberOfSlides = slides.length;
+  var slideNumber = 0;
+  
+  //image slider next button
+  nextBtn.addEventListener("click", () => {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active")
+    });
+  
+    slideNumber++;
+  
+    if(slideNumber > (numberOfSlides - 1)){
+      slideNumber = 0;
+    }
+  
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  });
+  
+  //image slider previous button
+  prevBtn.addEventListener("click", () => {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active");
+    });
+  
+    slideNumber--;
+  
+    if(slideNumber < 0){
+      slideNumber = numberOfSlides - 1;
+    }
+  
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  });
+  
+  //image slider autoplay
+  var playSlider;
+  
+  var repeater = () => {
+    playSlider = setInterval(function(){
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+  
+      slideNumber++;
+  
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+  
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    }, 4000);
+  }
+  repeater();
+  
+  //stop the image slider autoplay on mouseover
+  slider.addEventListener("mouseover", () => {
+    clearInterval(playSlider);
+  });
+  
+  //start the image slider autoplay again on mouseout
+  slider.addEventListener("mouseout", () => {
+    repeater();
+  });
+  </script>
+  
+  <script>
+    var checkbox_toggle = document.getElementById('light-dark');
+    checkbox_toggle.addEventListener('change', function(){
+    document.body.classList.toggle('dark');
+  });
+  </script>
+  </body>
+</div>
+</html>

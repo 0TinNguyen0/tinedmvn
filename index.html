@@ -1,0 +1,132 @@
+<IDOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>TIN EDM VN</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/logo_toga.jpg"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+       <div id="wrapper">
+             <header>
+                <div class="inner-header container">
+                    <div id="logo_header">
+                        <a href="" id="logo" title="TIN EDM VN" >TIN EDM VN</a>
+                    </div>
+                    
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="#" class="active" title="Trang chủ"><b>Trang Chủ</b></a></li>  
+                            <li><a href="wibu.html" title="Wibu"> <b> Wibu </b> </a> </li>
+                            <li><a href="#" title="Top Anime Hot"><b> Top Anime Hot</b></a> </li>                                         
+                            <a href="https://www.youtube.com/c/TINEDMVN" target="_blank" class="icon-youtube"><i class="fab fa-youtube"></i></a>      
+                            <a href="https://www.facebook.com/0TinNguyen0"  target="_blank" class="icon-facebook"><i class="fab fa-facebook"></i></a>  
+                            <div id="light_dark">
+                                <input type="checkbox" name="" class="switch-toggle" 
+                                id="light-dark">
+                            </div>
+                        </ul>
+                    </nav>
+                </div>        
+            </header>
+     
+        <div id="banner">
+            <h1 class="text-on-banner"><b>TIN EDM VN</b></h1>
+        </div> 
+
+        <div id="border">
+            <div class="text-video">
+                <a><b>Các Video Hot</b></a>
+            </div>
+            <div class="video-youtube">
+                <iframe class="video-youtube-1" src="https://www.youtube.com/embed/Xk4QatUgm0Q"></iframe>
+                <iframe class="video-youtube-2" src="https://www.youtube.com/embed/JK8TXGStvgI"></iframe>
+                <iframe class="video-youtube-3" src="https://www.youtube.com/embed/AqNLRNlsHW8"></iframe>
+                <iframe class="video-youtube-4" src="https://www.youtube.com/embed/fHx5ZcvTQPw"></iframe>
+                <iframe class="video-youtube-5" src="https://www.youtube.com/embed/qCy_dMXvERY"></iframe>
+                <iframe class="video-youtube-6" src="https://www.youtube.com/embed/ZWcx_63-83k"></iframe>
+            </div>
+        </div>
+
+        <div id="img-gif">
+            <img class="gif-1" src="/img/gif.gif" >
+            <img class="gif-2" src="/img/gif1.gif">
+            <img class="gif-3" src="/img/gif2.gif">
+            <img class="gif-4" src="/img/gif4.gif" >
+        </div>
+
+        <div id=lastpart>
+            
+        </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $(window).scroll(function() {
+                            if ($(this).scrollTop()) {
+                                $('header').addClass('sticky');
+                            }else{
+                                $('header').removeClass('sticky');
+                            }
+                        });
+                    });
+            </script>
+
+            <script>
+                $(document).ready(function() {
+                    $('#toggle').click(function() {
+                        $('header').slideToggle();
+                    });
+                });
+            </script>
+
+            <script>
+                var checkbox_toggle = document.getElementById('light-dark');
+                checkbox_toggle.addEventListener('change', function(){
+                document.body.classList.toggle('dark');
+            });
+            </script>
+            
+            <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107305177284698");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+            
+        </div>
+    </body>
+</div>
+</html>
